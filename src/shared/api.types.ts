@@ -19,4 +19,4 @@ export interface ApiError {
 }
 
 // Discriminated union of both
-export type ApiResponse<T> = ApiSuccess<T> | ApiError;
+export type ApiResponse<T> = ApiSuccess<T> | ApiError

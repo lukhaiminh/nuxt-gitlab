@@ -1,6 +1,4 @@
-import { defineNuxtModule, createResolver, addImports, addServerHandler, useLogger } from '@nuxt/kit'
-
-const logger = useLogger('nuxt-gitlab')
+import { defineNuxtModule, createResolver, addImports, addServerHandler } from '@nuxt/kit'
 
 export interface ModuleOptions {
   baseUrl: string
@@ -19,10 +17,6 @@ export default defineNuxtModule<ModuleOptions>({
   },
   setup(moduleOptions, nuxt) {
     const { resolve } = createResolver(import.meta.url)
-
-    if (!moduleOptions.token) {
-      logger.error(`GitLab token is not configured.`)
-    }
 
     nuxt.options.runtimeConfig.gitlab = {
       baseUrl: moduleOptions.baseUrl,

@@ -2,7 +2,10 @@
   "name": "nuxt-gitlab",
   "version": "0.1.0",
   "description": "GitLab integration module for Nuxt",
-  "repository": "git+https://github.com/lukhaiminh/nuxt-gitlab.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukhaiminh/nuxt-gitlab.git"
+  },
   "keywords": [
     "nuxt",
     "nuxt-module",

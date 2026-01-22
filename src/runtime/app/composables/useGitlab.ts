@@ -1,6 +1,6 @@
 // src/runtime/app/composables/useGitlab.ts
 
-import type { GitlabFileInput, GitLabFileResponse, GitlabRefsInput, GitLabRefsResponse, GitlabTreeInput, GitLabTreeResponse } from '#nuxt-gitlab/shared/gitlab'
+import type { ApiResponse, GitlabFileInput, GitLabFileResponse, GitlabRefsInput, GitLabRefsResponse, GitlabTreeInput, GitLabTreeResponse } from '#nuxt-gitlab/shared'
 
 export interface GitlabRefsOptions {
   projectId: string | number
@@ -21,7 +21,7 @@ export function useGitlab() {
   /**
    * Get branches or tags from GitLab
    */
-  async function getRefs(options: GitlabRefsInput): Promise<GitLabRefsResponse[]> {
+  async function getRefs(options: GitlabRefsInput): Promise<ApiResponse<GitLabRefsResponse[]>> {
     return $fetch('/api/_nuxt-gitlab/refs', {
       method: 'POST',
       body: {
@@ -31,7 +31,7 @@ export function useGitlab() {
     })
   }
 
-  async function getTree(options: GitlabTreeInput): Promise<GitLabTreeResponse[]> {
+  async function getTree(options: GitlabTreeInput): Promise<ApiResponse<GitLabTreeResponse[]>> {
     return $fetch('/api/_nuxt-gitlab/tree', {
       method: 'POST',
       body: {
@@ -41,7 +41,7 @@ export function useGitlab() {
     })
   }
 
-  async function getFiles(options: GitlabFileInput): Promise<GitLabFileResponse[]> {
+  async function getFiles(options: GitlabFileInput): Promise<ApiResponse<GitLabFileResponse[]>> {
     return $fetch('/api/_nuxt-gitlab/files', {
       method: 'POST',
       body: {

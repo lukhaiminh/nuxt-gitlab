@@ -25,7 +25,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.options.alias = {
       ...(nuxt.options.alias || {}),
-      '#nuxt-gitlab': resolve('./'),
+      '#nuxt-gitlab': resolve('./runtime/'),
     }
 
     /* Server routes */

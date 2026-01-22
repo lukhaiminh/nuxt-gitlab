@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.2
+
+[compare changes](https://github.com/lukhaiminh/nuxt-gitlab/compare/v0.1.2...v0.1.2)
+
+### 🏡 Chore
+
+- **release:** V0.1.1 ([b9277e5](https://github.com/lukhaiminh/nuxt-gitlab/commit/b9277e5))
+
+### ❤️ Contributors
+
+- MooN  < Lu Khai Minh>
+
 ## v0.1.1
 
 [compare changes](https://github.com/lukhaiminh/nuxt-gitlab/compare/v0.1.2...v0.1.1)

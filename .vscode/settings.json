@@ -1,0 +1,73 @@
+{
+  // Disable the default formatter, use eslint instead
+  "editor.formatOnSave": false,
+
+  "editor.gotoLocation.multipleDefinitions": "goto",
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "warn", "fixable": true },
+    { "rule": "format/*", "severity": "warn", "fixable": true },
+    { "rule": "*-indent", "severity": "warn", "fixable": true },
+    { "rule": "*-spacing", "severity": "warn", "fixable": true },
+    { "rule": "*-spaces", "severity": "warn", "fixable": true },
+    { "rule": "*-order", "severity": "warn", "fixable": true },
+    { "rule": "*-dangle", "severity": "warn", "fixable": true },
+    { "rule": "*-newline", "severity": "warn", "fixable": true },
+    { "rule": "*quotes", "severity": "warn", "fixable": true },
+    { "rule": "*semi", "severity": "warn", "fixable": true }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "css",
+    "less",
+    "scss"
+  ],
+  "mdc.enableFormatting": true,
+  // Recommended (for `mdc` and `md`, depending on your usage)
+  "[mdc]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.formatOnPaste": true
+  },
+  "workbench.editor.labelFormat": "short",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "vitest.nodeExecutable": "~/.nvm/versions/node/v22.15.0/bin/node",
+  "i18n-ally.enabledFrameworks": [
+    "vue"
+  ],
+  "i18n-ally.localesPaths": [
+    "app/i18n"
+    // "app"
+  ],
+  "i18n-ally.enabledParsers": [
+    "ts",
+    "js",
+    "json"
+  ],
+  "i18n-ally.pathMatcher": "{locale}/{namespaces}.{ext}",
+  "i18n-ally.keystyle": "nested"
+}

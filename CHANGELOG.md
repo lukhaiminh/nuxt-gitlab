@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.4
+
+[compare changes](https://github.com/lukhaiminh/nuxt-gitlab/compare/v0.1.3...v0.1.4)
+
+### 🩹 Fixes
+
+- Composables response type ([f30faa0](https://github.com/lukhaiminh/nuxt-gitlab/commit/f30faa0))
+
+### ❤️ Contributors
+
+- MooN  < Lu Khai Minh>
+
 ## v0.1.3
 
 [compare changes](https://github.com/lukhaiminh/nuxt-gitlab/compare/v0.1.2...v0.1.3)

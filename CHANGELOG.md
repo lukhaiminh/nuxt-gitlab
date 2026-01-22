@@ -1,0 +1,16 @@
+# Changelog
+
+
+## v0.1.1
+
+
+### 🚀 Enhancements
+
+- Initial nuxt-gitlab module ([b4309b4](https://github.com/lukhaiminh/nuxt-gitlab/commit/b4309b4))
+- Initial nuxt-gitlab module ([8068ad5](https://github.com/lukhaiminh/nuxt-gitlab/commit/8068ad5))
+- Initial nuxt-gitlab module ([6324f6a](https://github.com/lukhaiminh/nuxt-gitlab/commit/6324f6a))
+
+### ❤️ Contributors
+
+- MooN  < Lu Khai Minh>
+

@@ -1,12 +1,10 @@
 // src/runtime/server/api/tree.post.ts
 
 import { createError, defineEventHandler, readBody } from 'h3'
-import type { GitLabTreeResponse } from '#nuxt-gitlab/shared/gitlab'
-import { gitlabTreeSchema } from '#nuxt-gitlab/shared/gitlab'
+import { gitlabTreeSchema, type ApiSuccess, type GitLabTreeResponse } from '#nuxt-gitlab/shared'
 import { useRuntimeConfig } from '#imports'
-// import { gitlabTreeSchema } from '~/src/types/gitlab'
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async (event): Promise<ApiSuccess<GitLabTreeResponse[]>> => {
   const { gitlab: { baseUrl, token } } = useRuntimeConfig()
   const body = await readBody(event)
   const parsed = gitlabTreeSchema.safeParse(body)
@@ -45,7 +43,10 @@ export default defineEventHandler(async (event) => {
     }
 
     const data: GitLabTreeResponse[] = await treeRes.json()
-    return { data }
+    return {
+      success: true,
+      data,
+    }
   }
   catch (error) {
     // ❗ Network / unexpected error

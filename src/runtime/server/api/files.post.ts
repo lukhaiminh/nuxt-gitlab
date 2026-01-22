@@ -1,8 +1,8 @@
 import { useRuntimeConfig } from '#imports'
 import { createError, defineEventHandler, readBody } from 'h3'
-import { gitlabFilePullSchema, type ApiResponse, type GitLabFileResponse } from '#nuxt-gitlab/shared'
+import { gitlabFilePullSchema, type ApiSuccess, type GitLabFileResponse } from '#nuxt-gitlab/shared'
 
-export default defineEventHandler(async (event): Promise<ApiResponse<GitLabFileResponse[]>> => {
+export default defineEventHandler(async (event): Promise<ApiSuccess<GitLabFileResponse[]>> => {
   const { gitlab: { baseUrl, token } } = useRuntimeConfig()
   const body = await readBody(event)
   const parsed = gitlabFilePullSchema.safeParse(body)

@@ -9,6 +9,7 @@ const { data: branches, error, pending } = await useAsyncData(
       type: 'tags', // | `branches`
     }),
 )
+// branches?.value?.data
 
 const { data: tree } = await useAsyncData(
   'gitlab-tree',
@@ -33,6 +34,8 @@ const { data: files } = await useAsyncData(
 <template>
   <div>
     <h3>Nuxt module playground</h3>
+
+    {{ branches?.data }}
 
     <h4>Files data</h4>
     <pre v-if="tree">{{ files }}</pre>

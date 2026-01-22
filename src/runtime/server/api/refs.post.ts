@@ -8,10 +8,9 @@ So an API named /refs means it works with Git references (branches, tags), not j
 
 import { useRuntimeConfig } from '#imports'
 import { createError, defineEventHandler, readBody } from 'h3'
-import type { GitLabRefsResponse } from '#nuxt-gitlab/shared/gitlab'
-import { gitlabRefsSchema } from '#nuxt-gitlab/shared/gitlab'
+import { gitlabRefsSchema, type ApiSuccess, type GitLabRefsResponse } from '#nuxt-gitlab/shared'
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async (event): Promise<ApiSuccess<GitLabRefsResponse[]>> => {
   const { gitlab: { baseUrl, token } } = useRuntimeConfig()
   const body = await readBody(event)
   const parsed = gitlabRefsSchema.safeParse(body)
@@ -61,8 +60,6 @@ export default defineEventHandler(async (event) => {
 
     return {
       success: true,
-      projectId,
-      type,
       total: data.length,
       data,
     }

@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.5
+
+[compare changes](https://github.com/lukhaiminh/nuxt-gitlab/compare/v0.1.4...v0.1.5)
+
+### 🏡 Chore
+
+- Response type for useGitlab composables ([8ff787d](https://github.com/lukhaiminh/nuxt-gitlab/commit/8ff787d))
+
+### ❤️ Contributors
+
+- MooN  < Lu Khai Minh>
+
 ## v0.1.4
 
 [compare changes](https://github.com/lukhaiminh/nuxt-gitlab/compare/v0.1.3...v0.1.4)

@@ -1,6 +1,6 @@
 {
   "name": "nuxt-gitlab",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "GitLab integration module for Nuxt",
   "repository": {
     "type": "git",

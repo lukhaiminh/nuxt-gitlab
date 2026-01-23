@@ -1,5 +1,7 @@
 import { defineNuxtModule, createResolver, addImports, addServerHandler } from '@nuxt/kit'
 
+export * from './runtime/shared'
+
 export interface ModuleOptions {
   baseUrl: string
   token: string

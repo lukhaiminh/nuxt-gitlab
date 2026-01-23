@@ -1,3 +1,5 @@
+<!-- playground/app.vue -->
+
 <script setup lang="ts">
 const { getRefs, getTree, getFiles } = useGitlab()
 

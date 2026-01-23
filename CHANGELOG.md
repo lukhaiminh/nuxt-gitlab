@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/lukhaiminh/nuxt-gitlab/compare/v0.1.5...v0.1.6)
+
+### 🏡 Chore
+
+- README.md add Nuxt Compatibility ([a1f9271](https://github.com/lukhaiminh/nuxt-gitlab/commit/a1f9271))
+- Export types ([d8c63e6](https://github.com/lukhaiminh/nuxt-gitlab/commit/d8c63e6))
+
+### ❤️ Contributors
+
+- MooN  < Lu Khai Minh>
+
 ## v0.1.5
 
 [compare changes](https://github.com/lukhaiminh/nuxt-gitlab/compare/v0.1.4...v0.1.5)

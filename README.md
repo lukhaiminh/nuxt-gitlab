@@ -140,6 +140,13 @@ interface GitlabFilePullInput {
 }
 ```
 
+## License
+
+MIT
+
+## Nuxt Compatibility
+Nuxt 4, Nuxt 3
+
 ## Roadmap
 
 📂 Repository tree API
@@ -149,10 +156,6 @@ interface GitlabFilePullInput {
 🔄 Pagination support
 
 🧪 Extended test coverage
-
-## License
-
-MIT
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-gitlab/latest.svg?style=flat&colorA=020420&colorB=00DC82
